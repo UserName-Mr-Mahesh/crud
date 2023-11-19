@@ -1,6 +1,6 @@
 import axios from 'axios';
-import React, { useState } from 'react'
-
+import React, { useState } from 'react';
+import style from "../styles/createuser.module.css";
 const CreateUser = () => {
     let [name,setName]=useState();
     let [phone,setPhone]=useState();
@@ -21,21 +21,27 @@ const CreateUser = () => {
      }
 
   return (
-    <section>
-        <div>
-            <form action="">
-                <h2>Create User</h2>
-                <label htmlFor="">Name:</label>
-                <input type="text" placeholder='Enter Your Name' onChange={(e)=>{setName(e.target.value)}}/><br />
-                <label htmlFor="">Phone:</label>
-                <input type="tel" placeholder='Enter Your Phone Number' onChange={(e)=>{setPhone(e.target.value)}}/><br />
-                <label htmlFor="">Email:</label>
-                <input type="email" placeholder='Enter Your Email' onChange={(e)=>{setEmail(e.target.value)}}/><br />
-                <label htmlFor="">Password:</label>
-                <input type="password" placeholder='Enter Your Password' onChange={(e)=>{setPassword(e.target.value)}}/><br />
-                <button type='submit' onClick={formhandel}>Submit</button>
-            </form>
-        </div>
+    <section id={style.form}>
+        <table>
+            <tr><th colSpan={2}>Create User</th></tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder='Enter Your Name' onChange={(e)=>{setName(e.target.value)}}/></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="tel" placeholder='Enter Your Phone Number' onChange={(e)=>{setPhone(e.target.value)}}/></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder='Enter Your Email' onChange={(e)=>{setEmail(e.target.value)}}/></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" placeholder='Enter Your Password' onChange={(e)=>{setPassword(e.target.value)}}/></td>
+            </tr>
+            <tr><th colSpan={2}><button type='submit'  onClick={formhandel}>Submit</button></th></tr>
+        </table>
     </section>
   )
 }

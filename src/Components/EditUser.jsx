@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import style from "../styles/createuser.module.css";
 
 const EditUser = () => {
     let [name,setName]=useState();
@@ -33,8 +34,28 @@ const EditUser = () => {
         })
      }
   return (
-    <section>
-        <div>
+    <section id={style.form}>
+        <table>
+            <tr><th colSpan={2}>Create User</th></tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder='Enter Your Name'value={name} onChange={(e)=>{setName(e.target.value)}}/></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="tel" placeholder='Enter Your Phone Number'value={phone} onChange={(e)=>{setPhone(e.target.value)}}/></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder='Enter Your Email'value={email} onChange={(e)=>{setEmail(e.target.value)}}/></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" placeholder='Enter Your Password'value={password} onChange={(e)=>{setPassword(e.target.value)}}/></td>
+            </tr>
+            <tr><th colSpan={2}><button type='submit' onClick={formhandel}>Submit</button></th></tr>
+        </table>
+        {/* <div>
         <form action="">
                 <h2>Edit User</h2>
                 <label htmlFor="">Name:</label>
@@ -47,7 +68,7 @@ const EditUser = () => {
                 <input type="password" placeholder='Enter Your Password'value={password} onChange={(e)=>{setPassword(e.target.value)}}/><br />
                 <button type='submit' onClick={formhandel}>Submit</button>
             </form>
-        </div>
+        </div> */}
     </section>
   )
 }

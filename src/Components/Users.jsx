@@ -1,6 +1,8 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import style from "../styles/createuser.module.css";
+import style1 from "../styles/user.module.css";
 const Users = () => {
     let [data,setData]=useState([])
      useEffect(()=>{
@@ -19,16 +21,15 @@ const Users = () => {
         window.location.assign("/")
     }
   return (
-    <section>
+    <section id={style.form}>
         {data.map((x)=>{
             return (
-                <div>
+                <div id={style1.profile}>
                     <h1>User {x.id}</h1>
                     <h1>{x.name}</h1>
                     <h2>{x.phone}</h2>
                     <h3>{x.email}</h3>
-                    <button><Link to={`/edituser/${x.id}`}>Edit</Link></button><br />
-                    <button onClick={()=>{deleteData(x.id)}}>Delete</button><br />
+                    <button><Link to={`/edituser/${x.id}`}>Edit</Link></button>    <button onClick={()=>{deleteData(x.id)}}>Delete</button><br />
                 </div>
             )
         })}

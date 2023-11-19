@@ -1,0 +1,18 @@
+#profile{
+    background-color: aquamarine;
+    padding: 30px;
+    height: 250px;
+    border-radius: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+#profile>button{
+    padding: 5px;
+    mix-blend-mode: darken;
+    /* border: none; */
+    border-radius: 10px;
+}
+#profile>button>a{
+    text-decoration: none;
+    color: black;
+}
