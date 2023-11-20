@@ -5,11 +5,16 @@
     border-radius: 10px;
     line-height: 30px;
     text-align: center;
+    box-shadow: 10px 10px 10px black;   
+}
+#profile:hover{
+    width: 400px;
+    height: 300px;
+    transition: 1s;
 }
 #profile>button{
     padding: 5px;
     mix-blend-mode: darken;
-    /* border: none; */
     border-radius: 10px;
 }
 #profile>button>a{

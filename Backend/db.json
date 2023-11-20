@@ -1,30 +1,37 @@
 {
   "user": [
     {
-      "name": "Ashok",
-      "phone": "9581260048",
-      "email": "ashokmiss7@gmail.com",
-      "password": "7777",
-      "id": 2
-    },
-    {
       "name": "Mahesh Mr",
       "phone": "9381513584",
       "email": "maheshlucky525@gmail.com",
-      "password": "123",
-      "id": 3
+      "password": "1234",
+      "id": 1
     },
     {
       "name": "Haribabu",
-      "phone": "09381152030",
+      "phone": "9381152030",
       "email": "haribabukummara6@gmail.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "Anusha",
+      "phone": "7569131114",
+      "email": "boyapatianusha3563@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "Ashok",
+      "phone": "9581260048",
+      "email": "ashokmiss7@gmail.com",
       "password": "1234",
       "id": 4
     },
     {
-      "name": "Anusha",
-      "phone": "+917569131114",
-      "email": "boyapatianusha3563@gmail.com",
+      "name": "Bhanu",
+      "phone": "6304492020",
+      "email": "bhanu123@gmail.com",
       "password": "1234",
       "id": 5
     }
