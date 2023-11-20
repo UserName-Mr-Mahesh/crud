@@ -9,7 +9,7 @@ const CreateUser = () => {
     let formhandel=(e)=>{
         e.preventDefault()
         let payload={name,phone,email,password}
-        axios.post("http://localhost:3000/user",payload)
+        axios.post("http://localhost:5000/user",payload)
         .then(()=>{
             alert("Your data Has been added");
             console.log("Data Added succesfully");

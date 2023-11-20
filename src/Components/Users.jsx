@@ -6,7 +6,7 @@ import style1 from "../styles/user.module.css";
 const Users = () => {
     let [data,setData]=useState([])
      useEffect(()=>{
-        axios.get("http://localhost:3000/user")
+        axios.get("http://localhost:5000/user")
         .then((res)=>{
             setData(res.data)
         })
@@ -17,7 +17,7 @@ const Users = () => {
     )
 
     let deleteData=(id)=>{
-        axios.delete(`http://localhost:3000/user/${id}`)
+        axios.delete(`http://localhost:5000/user/${id}`)
         window.location.assign("/")
     }
   return (
