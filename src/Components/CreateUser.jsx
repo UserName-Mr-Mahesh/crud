@@ -1,23 +1,31 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import style from "../styles/createuser.module.css";
+import { useNavigate } from 'react-router-dom';
 const CreateUser = () => {
     let [name,setName]=useState();
     let [phone,setPhone]=useState();
     let [email,setEmail]=useState();
     let [password,setPassword]=useState();
+    let navigate = useNavigate();
     let formhandel=(e)=>{
-        e.preventDefault()
+        // e.preventDefault()
         let payload={name,phone,email,password}
-        axios.post("http://localhost:5000/user",payload)
-        .then(()=>{
-            alert("Your data Has been added");
-            console.log("Data Added succesfully");
+        if(!name || !phone || !email || !password){
+            alert("Your data Has not enterd");
+        }
+        else{
+            axios.post("http://localhost:5000/user",payload)
+            .then(()=>{
+                alert("Your data Has been added");
+                console.log("Data Added succesfully");
+                navigate("/users")
 
-        })
-        .catch((err)=>{
-            console.log(err);
-        })
+            })
+            .catch((err)=>{
+                console.log(err);
+            })
+        }
      }
 
   return (
