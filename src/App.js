@@ -6,6 +6,8 @@ import CreateUser from './Components/CreateUser';
 import Users from './Components/Users';
 import EditUser from './Components/EditUser';
 
+const api ="http://localhost:5000/user";
+
 function App() {
   return (
     <section>
