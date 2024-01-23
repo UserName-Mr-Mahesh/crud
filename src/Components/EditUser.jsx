@@ -10,7 +10,7 @@ const EditUser = () => {
     let [password,setPassword]=useState();
     let {index}=useParams()
    useEffect(()=>{
-        axios.get(`http://localhost:5000/user/${index}`)
+        axios.get(`https://650d386da8b42265ec2bd667.mockapi.io/user/${index}`)
         .then((res)=>{
             setName(res.data.name)
             setPhone(res.data.phone)
@@ -22,7 +22,7 @@ const EditUser = () => {
     let formhandel=(e)=>{
         e.preventDefault()
         let payload={name,phone,email,password}
-        axios.put(`http://localhost:5000/user/${index}`,payload)
+        axios.put(`https://650d386da8b42265ec2bd667.mockapi.io/user/${index}`,payload)
         .then(()=>{
             alert("Your data Has updated succesfully");
             console.log("Data updated succesfully");

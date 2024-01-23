@@ -6,7 +6,7 @@ import style1 from "../styles/user.module.css";
 const Users = () => {
     let [data,setData]=useState([])
      useEffect(()=>{
-        axios.get("http://localhost:5000/user")
+        axios.get("https://650d386da8b42265ec2bd667.mockapi.io/user")
         .then((res)=>{
             setData(res.data)
         })
@@ -17,7 +17,7 @@ const Users = () => {
     )
 
     let deleteData=(id)=>{
-        axios.delete(`http://localhost:5000/user/${id}`)
+        axios.delete(`https://650d386da8b42265ec2bd667.mockapi.io/user/${id}`)
         window.location.assign("/")
     }
   return (

@@ -15,7 +15,8 @@ const CreateUser = () => {
             alert("Your data Has not enterd");
         }
         else{
-            axios.post("http://localhost:5000/user",payload)
+            // axios.post("http://localhost:5000/user",payload)
+            axios.post("https://650d386da8b42265ec2bd667.mockapi.io/user",payload)
             .then(()=>{
                 alert("Your data Has been added");
                 console.log("Data Added succesfully");
