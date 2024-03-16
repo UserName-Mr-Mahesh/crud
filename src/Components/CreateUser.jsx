@@ -32,21 +32,21 @@ const CreateUser = () => {
   return (
     <section id={style.form}>
         <table>
-            <tr><th colSpan={2}>Create User</th></tr>
+            <tr><th colSpan={2}>User Details</th></tr>
             <tr>
-                <td>Name:</td>
+                <td><i class="fa fa-user" aria-hidden="true"></i></td>
                 <td><input type="text" placeholder='Enter Your Name' onChange={(e)=>{setName(e.target.value)}}/></td>
             </tr>
             <tr>
-                <td>Phone:</td>
+                <td><i class="fa fa-phone" aria-hidden="true"></i></td>
                 <td><input type="tel" placeholder='Enter Your Phone Number' onChange={(e)=>{setPhone(e.target.value)}}/></td>
             </tr>
             <tr>
-                <td>Email:</td>
+                <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
                 <td><input type="email" placeholder='Enter Your Email' onChange={(e)=>{setEmail(e.target.value)}}/></td>
             </tr>
             <tr>
-                <td>Password:</td>
+                <td><i class="fa fa-lock" aria-hidden="true"></i></td>
                 <td><input type="password" placeholder='Enter Your Password' onChange={(e)=>{setPassword(e.target.value)}}/></td>
             </tr>
             <tr><th colSpan={2}><button type='submit'  onClick={formhandel}>Submit</button></th></tr>

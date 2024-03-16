@@ -1,5 +1,7 @@
 #form{
-    background-color:rgb(13, 224, 224);
+    /* background-color:rgb(13, 224, 224); */
+    /* background-image: linear-gradient(to right, rgb(160, 158, 225), rgb(62, 62, 167),rgb(42, 42, 140)); */
+
     width: 100%;
     min-height: 90vh;
     margin: auto;
@@ -11,16 +13,30 @@
 #form>table{
     width: 300px;
     height: 300px;    
-    text-align: center;
     border-radius: 10px;
-    background-color:aquamarine;
+    background-image:radial-gradient(white,rgb(27, 6, 113)) ;
     box-shadow: 10px 10px 10px black;
+    padding-left: 25px;
 }
-#form>table input,button{
+#form button{
     border-radius: 5px;
-    text-align: center;
-    padding: 5px;
+    padding: 5px 10px;
+    background-color: transparent;
+    cursor: pointer;
 }
-#form>table button{
+/* #form>table button{
     padding: 8px;
+    background-color: transparent;
+} */
+i{
+   font-size: 25px;
+}
+input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+::placeholder{
+    color: black;
 }

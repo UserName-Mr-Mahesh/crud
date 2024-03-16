@@ -1,15 +1,17 @@
 #profile{
-    background-color: aquamarine;
+    background-image:radial-gradient(white,rgb(27, 6, 113)) ;
     padding: 30px;
-    height: 250px;
+    min-width: 250px;
+    min-height: 210px;
+    margin: 10px;
     border-radius: 10px;
     line-height: 30px;
     text-align: center;
     box-shadow: 10px 10px 10px black;   
 }
 #profile:hover{
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 230px;
     transition: 1s;
 }
 #profile>button{
